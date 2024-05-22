@@ -4,7 +4,8 @@ export const homePage = {
 
     selectors: {
         editLink: '.edit',
-        rowSelector: 'li'
+        rowSelector: 'li',
+        deleteLink: '.delete'
     },
 
     clickEditOnUser: (user: User) => {
@@ -18,6 +19,13 @@ export const homePage = {
         cy.get(homePage.selectors.rowSelector)
             .contains(name)
             .find(homePage.selectors.editLink)
+            .click()
+    },
+
+    deleteUser: (name: string) =>{
+        cy.get(homePage.selectors.rowSelector)
+            .contains(name)
+            .find(homePage.selectors.deleteLink)
             .click()
     }
 

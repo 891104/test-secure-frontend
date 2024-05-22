@@ -33,7 +33,7 @@
     },
     {
         "id": 4,
-        "username": "client",
+        "username": "test",
         "email": "client2@email.com",
         "roles": [
             "ROLE_CLIENT"
