@@ -36,8 +36,7 @@ jobs:
           name: cypress-videos
           path: cypress/videos
           if-no-files-found: ignore
-
-jobs:
+          
   cypress-run:
     runs-on: ubuntu-latest
     container:
@@ -72,7 +71,6 @@ jobs:
           path: cypress/videos
           if-no-files-found: ignore
 
-jobs:
   cypress-run:
     runs-on: ubuntu-latest
     container:
