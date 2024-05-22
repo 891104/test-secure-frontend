@@ -36,8 +36,8 @@ jobs:
           name: cypress-videos
           path: cypress/videos
           if-no-files-found: ignore
-          
-  cypress-run:
+
+  cypress-run-edge:
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:node-20.13.1-chrome-125.0.6422.60-1-ff-126.0-edge-125.0.2535.51-1
@@ -71,7 +71,7 @@ jobs:
           path: cypress/videos
           if-no-files-found: ignore
 
-  cypress-run:
+  cypress-run-firefox:
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:node-20.13.1-chrome-125.0.6422.60-1-ff-126.0-edge-125.0.2535.51-1
