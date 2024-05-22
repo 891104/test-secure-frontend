@@ -25,4 +25,9 @@ describe('login page tests', () => {
     cy.get('h1').should('contain.text', user.firstName)
   })
 
+  it('always fails', () => {
+    // given
+    cy.get('h3',{timeout: 100}).should('have.text','it fails')
+  })
+
 })
