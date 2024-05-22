@@ -7,6 +7,9 @@ declare global {
             register(user: User): Chainable<Response<any>>
             deleteUser(username: string, token: string): void
             getUserDetails(username: string, token: string): Chainable<Response<any>>
+
+            //isolationCommands 
+            openHomePage(): void
         }
     }
 }

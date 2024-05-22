@@ -8,6 +8,7 @@ import { loginPage } from "../../pages/LoginPageClass"
 describe('login page tests', () => {
   beforeEach(() => {
     cy.visit('')
+    cy.get('h2').should('have.text','Login')
   })
 
   it('should successfully login', () => {
